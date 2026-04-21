@@ -53,7 +53,7 @@ def test_cag_service_generate_smoke() -> None:
     cag = CAGService(crag_service=crag, cache=cache)
 
     query = "Mercedes-Benz price and location?"
-    result = cag.generate(query, use_cache=False)
+    result = cag.generate(query, use_cache=True)
 
     # Display output when running with: pytest -s
     print("\n--- QUERY ---")
